@@ -9,13 +9,17 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+  
+    let profileHeaderView = ProfileHeaderView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let view = Bundle.main.loadNibNamed("GGView", owner: nil, options: nil)?.first as! UIView
-//        view.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-//// //       let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         view.backgroundColor = .lightGray
-//        self.view.addSubview(view)
+        self.view.addSubview(profileHeaderView)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        profileHeaderView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+//        view.backgroundColor = .green // - для проверки работы метода
     }
 }
