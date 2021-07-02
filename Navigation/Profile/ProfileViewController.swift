@@ -20,6 +20,5 @@ class ProfileViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         profileHeaderView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
-//        view.backgroundColor = .green // - для проверки работы метода
     }
 }
