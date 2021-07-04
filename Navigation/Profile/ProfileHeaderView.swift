@@ -23,7 +23,7 @@ class ProfileHeaderView: UIView {
     }
 
     var labelHipsterCat: UITextField {
-        let labelHipsterCat = UITextField (frame: CGRect(x: 146, y: 56, width: 200, height: 100))
+        let labelHipsterCat = UITextField (frame: CGRect(x: 146, y: -10, width: 200, height: 100))
         labelHipsterCat.text = "Hipster Cat"
         labelHipsterCat.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         labelHipsterCat.textColor = .black
@@ -34,7 +34,7 @@ class ProfileHeaderView: UIView {
         let imageAvatar = UIImageView()
         imageAvatar.contentMode = .scaleAspectFill
         imageAvatar.image = #imageLiteral(resourceName: "cat")
-        imageAvatar.frame = CGRect(x: 16, y: 80, width: 110, height: 110)
+        imageAvatar.frame = CGRect(x: 16, y: 16, width: 110, height: 110)
         imageAvatar.clipsToBounds = true //  пока не надо
         imageAvatar.layer.cornerRadius = imageAvatar.frame.height / 2
         imageAvatar.layer.borderWidth = 3
@@ -43,7 +43,7 @@ class ProfileHeaderView: UIView {
     }()
     
     var textField: UITextField {
-        let textField = UITextField(frame: CGRect(x: 146, y: 116, width: 150, height: 100))
+        let textField = UITextField(frame: CGRect(x: 146, y: 50, width: 150, height: 100))
         textField.text = "Waiting for something"
         textField.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         textField.textColor = .gray
@@ -51,7 +51,7 @@ class ProfileHeaderView: UIView {
     }
 
     var button: UIButton {
-        let button = UIButton(frame: CGRect(x: 16, y: 210, width: 332, height: 50))
+        let button = UIButton(frame: CGRect(x: 16, y: 140, width: 290, height: 50))
         button.setTitle("Show status", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .blue
