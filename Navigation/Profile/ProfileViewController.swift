@@ -9,16 +9,30 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-  
-    let profileHeaderView = ProfileHeaderView()
     
+    var bottomButton: UIButton = {
+        let bottomButton = UIButton()
+        bottomButton.setTitle("Нижняя кнопка", for: .normal)
+        bottomButton.backgroundColor = .black
+        return bottomButton
+
+    }()
+
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        view.backgroundColor = .lightGray
-        self.view.addSubview(profileHeaderView)
+        view.addSubview(bottomButton)
+        bottomButton.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+        bottomButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
+        bottomButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            bottomButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            bottomButton.trailingAnchor.constraint(equalTo: view.trailingAnchor,  constant: -10)
+        ])
     }
     
-    override func viewWillLayoutSubviews() {
-        profileHeaderView.frame = CGRect(x: 0, y: view.safeAreaInsets.top, width: self.view.frame.width, height: self.view.frame.height)
-    }
+    
+    
+    
 }
