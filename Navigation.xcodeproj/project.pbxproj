@@ -16,6 +16,7 @@
 		060782C6250CEB0A00A87020 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060782C5250CEB0A00A87020 /* InfoViewController.swift */; };
 		060782C8250CEE5D00A87020 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060782C7250CEE5D00A87020 /* PostViewController.swift */; };
 		060782CA250CEE7200A87020 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060782C9250CEE7200A87020 /* Post.swift */; };
+		EB5E21E5269ED0CC00F5B013 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5E21E4269ED0CC00F5B013 /* LoginViewController.swift */; };
 		EBDA56132683732D00A88C74 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA56122683732D00A88C74 /* ProfileHeaderView.swift */; };
 		EBDA56152683746800A88C74 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA56142683746800A88C74 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		060782C5250CEB0A00A87020 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		060782C7250CEE5D00A87020 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		060782C9250CEE7200A87020 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EB5E21E4269ED0CC00F5B013 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EBDA56122683732D00A88C74 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		EBDA56142683746800A88C74 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 			children = (
 				EBDA56122683732D00A88C74 /* ProfileHeaderView.swift */,
 				EBDA56142683746800A88C74 /* ProfileViewController.swift */,
+				EB5E21E4269ED0CC00F5B013 /* LoginViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				EBDA56132683732D00A88C74 /* ProfileHeaderView.swift in Sources */,
 				060782B4250CE27700A87020 /* SceneDelegate.swift in Sources */,
 				EBDA56152683746800A88C74 /* ProfileViewController.swift in Sources */,
+				EB5E21E5269ED0CC00F5B013 /* LoginViewController.swift in Sources */,
 				060782C8250CEE5D00A87020 /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
