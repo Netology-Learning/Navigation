@@ -124,12 +124,17 @@ class LoginViewController: UIViewController {
         
     }
 
-
     @objc func pressButton() { // обработка нажатия кнопки
         print("Проверка нажатия кнопки")
         
+        // программная часть экрана
+        let profileViewControllerProgramm = ProfileViewController()
+        navigationController?.pushViewController(profileViewControllerProgramm, animated: true)
+        
+        // сторибордовская часть экрана
+        let profileViewControllerStoryBoard = self.storyboard?.instantiateViewController(identifier: "Profile") as! ProfileViewController
+            navigationController?.pushViewController(profileViewControllerStoryBoard, animated: true)
     }
-
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

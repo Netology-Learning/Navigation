@@ -190,12 +190,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Jt-9n-mlM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="628" y="197"/>
+            <point key="canvasLocation" x="627.536231884058" y="196.875"/>
         </scene>
         <!--Profile-->
         <scene sceneID="CpW-YL-rC3">
             <objects>
-                <viewController id="sA8-pR-42r" customClass="ProfileViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Profile" title="Profile" id="sA8-pR-42r" customClass="ProfileViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tNS-Qy-qlU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,11 +282,12 @@
                             <constraint firstItem="qOU-Sf-TCo" firstAttribute="leading" secondItem="4yc-ii-Vm9" secondAttribute="leading" id="tys-Da-bug"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="3C0-Y6-i11"/>
                     <navigationItem key="navigationItem" title="Profile" id="vQ4-2y-Fmm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wcm-l1-a8j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1059" y="636"/>
+            <point key="canvasLocation" x="-1059" y="641"/>
         </scene>
         <!--Profile-->
         <scene sceneID="ktE-GG-Can">
