@@ -30,11 +30,5 @@ class ProfileViewController: UIViewController {
             bottomButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             bottomButton.trailingAnchor.constraint(equalTo: view.trailingAnchor,  constant: -10)
         ])
-        
     }
-    
-//    override func viewWillAppear(animated: Bool) {
-//        self.navigationController?.isNavigationBarHidden = true
-//    }
-    
 }

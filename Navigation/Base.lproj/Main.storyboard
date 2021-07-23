@@ -83,21 +83,8 @@
                     <view key="view" contentMode="scaleToFill" id="NJr-hs-eEz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yy" translatesAutoresizingMaskIntoConstraints="NO" id="yLM-60-mnA">
-                                <rect key="frame" x="38.666666666666657" y="340" width="337" height="261"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="337" id="Kjd-Z6-5T9"/>
-                                    <constraint firstAttribute="height" constant="261" id="obs-ML-n2I"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qcf-0q-WgP"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
-                        <constraints>
-                            <constraint firstItem="yLM-60-mnA" firstAttribute="centerX" secondItem="NJr-hs-eEz" secondAttribute="centerX" id="5Gh-bV-bTY"/>
-                            <constraint firstItem="yLM-60-mnA" firstAttribute="centerY" secondItem="NJr-hs-eEz" secondAttribute="centerY" constant="22.5" id="hf3-0E-i2T"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Post" id="N0m-Za-SVh">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Pkk-RI-ftz">
@@ -345,7 +332,6 @@
         <image name="cat" width="628" height="626"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="yy" width="1656" height="1294"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -10,16 +10,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-//    var device: Device? = nil {    // --- для ДЗ1 эту херню, вероятно, можно убрать
-//        didSet {
-//
-//        }
-//    } // -------------------------------------- 34:07
-
-
-
     let scrollView = UIScrollView()
-    let containerView = UIView() //или  UIStackView???
+    let containerView = UIView()
 
     var labelImage: UIImageView = {
         let labelImage = UIImageView()
@@ -64,15 +56,15 @@ class LoginViewController: UIViewController {
         logInButton.setTitle("Log in", for: .normal)
         logInButton.setBackgroundImage(#imageLiteral(resourceName: "blue_pixel"), for: .normal)
         logInButton.layer.cornerRadius = 10
-        logInButton.layer.masksToBounds = true // для кнопки без этого не будет загругления
-        logInButton.addTarget(self, action: #selector(pressButton), for: .touchUpInside) // обработка нажатия кнопки
+        logInButton.layer.masksToBounds = true
+        logInButton.addTarget(self, action: #selector(pressButton), for: .touchUpInside)
         return logInButton
     }()
     
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = true // убираем навигатор-бар
+        self.navigationController?.isNavigationBarHidden = true
 
         view.backgroundColor = .white
         view.addSubview(scrollView)
@@ -119,19 +111,14 @@ class LoginViewController: UIViewController {
             logInButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
             logInButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16),
             logInButton.heightAnchor.constraint(equalToConstant: 50),
-            logInButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: 0) // привязка к нижнему краю контейнера!!!
+            logInButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: 0)
         ])
         
     }
 
-    @objc func pressButton() { // обработка нажатия кнопки
+    @objc func pressButton() {
         print("Проверка нажатия кнопки")
         
-        // программная часть экрана
-        let profileViewControllerProgramm = ProfileViewController()
-        navigationController?.pushViewController(profileViewControllerProgramm, animated: true)
-        
-        // сторибордовская часть экрана
         let profileViewControllerStoryBoard = self.storyboard?.instantiateViewController(identifier: "Profile") as! ProfileViewController
             navigationController?.pushViewController(profileViewControllerStoryBoard, animated: true)
     }
@@ -140,16 +127,12 @@ class LoginViewController: UIViewController {
         super.viewWillAppear(animated)
 
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        // Или???
-        // …name: NSNotification.Name.keyboardWillShowNotification, object: nil)
 
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-
-    //    NotificationCenter.default.removeObserver(self)
 
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -167,17 +150,9 @@ class LoginViewController: UIViewController {
     @objc func keyboardWillHide(notification: NSNotification) {
         scrollView.contentInset.bottom = .zero
         scrollView.verticalScrollIndicatorInsets = .zero
-
     }
-    
-    
-    
 }
 
-//private extension LoginViewController {
-//    func setupViews() {
-//    }
-//}
 
 
 
