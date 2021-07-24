@@ -9,7 +9,7 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-    
+
     var bottomButton: UIButton = {
         let bottomButton = UIButton()
         bottomButton.setTitle("Нижняя кнопка", for: .normal)
@@ -19,7 +19,7 @@ class ProfileViewController: UIViewController {
     }()
 
     override func viewDidLoad() {
-        
+
         super.viewDidLoad()
         view.addSubview(bottomButton)
         bottomButton.translatesAutoresizingMaskIntoConstraints = false

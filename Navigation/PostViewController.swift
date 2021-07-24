@@ -14,6 +14,13 @@ class PostViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = post?.title
+//        title = post?.title
+//        author = post?.author
+//        description = post?.description
+//        image = post?.image
+//        likes = post?.likes
+//        views = post?.views
     }
 }
+
+
