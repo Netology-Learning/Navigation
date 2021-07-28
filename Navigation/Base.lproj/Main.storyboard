@@ -37,6 +37,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fej-J0-H8j">
                                 <rect key="frame" x="152" y="348" width="110" height="200"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fej-J0-H8j" secondAttribute="height" multiplier="11:20" id="lQM-xi-vvj"/>
+                                    <constraint firstAttribute="width" constant="110" id="osY-6n-9Uk"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZD-FA-6AI">
                                 <rect key="frame" x="162" y="404" width="90" height="30"/>
@@ -61,12 +65,15 @@
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="Fej-J0-H8j" firstAttribute="centerY" secondItem="hnQ-fB-PJI" secondAttribute="centerY" id="8KF-YW-2OI"/>
+                            <constraint firstItem="Fej-J0-H8j" firstAttribute="centerX" secondItem="hnQ-fB-PJI" secondAttribute="centerX" id="BJQ-Kt-ELL"/>
                             <constraint firstItem="Fej-J0-H8j" firstAttribute="top" secondItem="rDk-lR-Mb7" secondAttribute="top" constant="260" id="GIe-Pw-B1y"/>
                             <constraint firstItem="Fej-J0-H8j" firstAttribute="centerX" secondItem="GZD-FA-6AI" secondAttribute="centerX" id="I94-KV-WAJ"/>
                             <constraint firstItem="Fej-J0-H8j" firstAttribute="centerX" secondItem="hnQ-fB-PJI" secondAttribute="centerX" id="alm-FU-8ik"/>
                             <constraint firstItem="Fej-J0-H8j" firstAttribute="centerX" secondItem="mfK-uK-PiY" secondAttribute="centerX" id="cVX-xG-EKo"/>
                             <constraint firstItem="Fej-J0-H8j" firstAttribute="leading" secondItem="rDk-lR-Mb7" secondAttribute="leading" constant="152" id="hKy-j0-cGb"/>
                             <constraint firstItem="mfK-uK-PiY" firstAttribute="top" secondItem="GZD-FA-6AI" secondAttribute="bottom" constant="10" id="hRE-Vv-kbH"/>
+                            <constraint firstItem="Fej-J0-H8j" firstAttribute="centerY" secondItem="hnQ-fB-PJI" secondAttribute="centerY" id="iRG-YF-tS8"/>
+                            <constraint firstItem="Fej-J0-H8j" firstAttribute="centerX" secondItem="hnQ-fB-PJI" secondAttribute="centerX" id="o8x-23-fDx"/>
                             <constraint firstItem="GZD-FA-6AI" firstAttribute="top" secondItem="rDk-lR-Mb7" secondAttribute="top" constant="316" id="pUs-ky-fb8"/>
                         </constraints>
                     </view>
@@ -274,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wcm-l1-a8j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1059" y="641"/>
+            <point key="canvasLocation" x="-1059.4202898550725" y="640.84821428571422"/>
         </scene>
         <!--Profile-->
         <scene sceneID="ktE-GG-Can">
