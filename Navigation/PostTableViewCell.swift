@@ -35,7 +35,6 @@ final class PostTableViewCell: UITableViewCell {
         descriptionLable.textColor = .systemGray
         descriptionLable.numberOfLines = 0
         
-        
         descriptionLable.translatesAutoresizingMaskIntoConstraints = false
         return descriptionLable
     }()
@@ -72,8 +71,6 @@ final class PostTableViewCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-        
-//        setupViews()
     }
     
 }
@@ -93,13 +90,14 @@ private extension PostTableViewCell {
 
             
             postImageView.topAnchor.constraint(equalTo: authorLable.bottomAnchor, constant: 10),
-            postImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            postImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            
             postImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            postImageView.heightAnchor.constraint(equalToConstant: 350),
+            postImageView.heightAnchor.constraint(equalTo: postImageView.widthAnchor),
             
             descriptionLable.topAnchor.constraint(equalTo: postImageView.bottomAnchor, constant: 10),
             descriptionLable.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-//            descriptionLable.heightAnchor.constraint(equalToConstant: 30),
+            descriptionLable.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
 
             likesLable.topAnchor.constraint(equalTo: descriptionLable.bottomAnchor, constant: 10),
             likesLable.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
@@ -108,7 +106,6 @@ private extension PostTableViewCell {
             viewsLable.topAnchor.constraint(equalTo: descriptionLable.bottomAnchor, constant: 10),
             viewsLable.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             viewsLable.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
-            
         ]
         
         NSLayoutConstraint.activate(constraints)
