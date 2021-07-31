@@ -10,7 +10,8 @@ import UIKit
 
 final class FeedViewController: UIViewController {
     
-    let post: Post = Post(title: "Пост")
+    let posting: Posting = Posting(author: " ",  description: " ", image: #imageLiteral(resourceName: "0.jpg"), likes: 150, views:151)
+
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -64,6 +65,6 @@ final class FeedViewController: UIViewController {
         guard let postViewController = segue.destination as? PostViewController else {
             return
         }
-        postViewController.post = post
+        postViewController.posting = posting
     }
 }

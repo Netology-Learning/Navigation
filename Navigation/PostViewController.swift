@@ -10,10 +10,13 @@ import UIKit
 
 class PostViewController: UIViewController {
     
-    var post: Post?
+    var posting: Posting?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = post?.title
     }
+    
 }
+
+
+
