@@ -10,7 +10,6 @@ import UIKit
 
 class ProfileTableHeaderView: UITableViewHeaderFooterView {
 
-// КАРТИНКА КОШКИ
     private let avatar: UIImageView = {
         let avatar = UIImageView()
         avatar.contentMode = .scaleAspectFill
@@ -22,8 +21,6 @@ class ProfileTableHeaderView: UITableViewHeaderFooterView {
         return avatar
     }()
     
-    
-// Hipster Cat
     private let userName: UILabel = {
         let userName = UILabel()
         userName.font = UIFont.systemFont(ofSize: 18, weight: .bold)
@@ -34,7 +31,6 @@ class ProfileTableHeaderView: UITableViewHeaderFooterView {
         return userName
         }()
     
-// серая надпись
     private let currentStatus: UILabel = {
         let currentStatus = UILabel()
         currentStatus.font = UIFont.systemFont(ofSize: 14, weight: .regular)
@@ -45,7 +41,6 @@ class ProfileTableHeaderView: UITableViewHeaderFooterView {
         return currentStatus
         }()
 
-// надпись в белом поле
     private let newStatus: UITextField = {
         let newStatus = UITextField()
         newStatus.layer.borderWidth = 1
@@ -60,14 +55,13 @@ class ProfileTableHeaderView: UITableViewHeaderFooterView {
         newStatus.translatesAutoresizingMaskIntoConstraints = false
         return newStatus
         }()
-// отступ в белом поле
+
     private let spaceView: UIView = {
         let spaceView = UIView()
         spaceView.translatesAutoresizingMaskIntoConstraints = false
         return spaceView
         }()
 
-// кнопка
     private let actionButton: UIButton = {
         let actionButton = UIButton()
         actionButton.layer.shadowRadius = 4
@@ -126,33 +120,28 @@ class ProfileTableHeaderView: UITableViewHeaderFooterView {
         
     let constraints = [
         
-        // КАРТИНКА КОШКИ
         avatar.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
         avatar.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
         avatar.heightAnchor.constraint(equalToConstant: 100),
         avatar.widthAnchor.constraint(equalToConstant: 100),
         
-        // Hipster Cat
         userName.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 27),
         userName.leadingAnchor.constraint(equalTo: avatar.trailingAnchor, constant: 16),
         userName.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
         
-        // серая надпись
         currentStatus.topAnchor.constraint(equalTo: userName.bottomAnchor, constant: 30),
         currentStatus.leadingAnchor.constraint(equalTo: userName.leadingAnchor),
         
-        // надпись в белом поле
         newStatus.topAnchor.constraint(equalTo: currentStatus.bottomAnchor, constant: 10),
         newStatus.leadingAnchor.constraint(equalTo: userName.leadingAnchor),
         newStatus.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
         newStatus.heightAnchor.constraint(equalToConstant: 40),
-        // отступ в белом поле
+ 
         spaceView.topAnchor.constraint(equalTo: newStatus.topAnchor),
         spaceView.leadingAnchor.constraint(equalTo: newStatus.leadingAnchor, constant: 10),
         spaceView.widthAnchor.constraint(equalToConstant: 20),
         spaceView.bottomAnchor.constraint(equalTo: newStatus.bottomAnchor),
 
-        // кнопка
         actionButton.topAnchor.constraint(equalTo: newStatus.bottomAnchor, constant: 16),
         actionButton.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
         actionButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),

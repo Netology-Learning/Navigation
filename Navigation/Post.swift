@@ -9,12 +9,11 @@
 import UIKit
 
 struct Posting {
-    let author: String //никнейм автора публикации
-    let description: String //текст публикации
-    let image: UIImage //картинка из каталога 'Assets.xcassets'
-//    let image: String
-    let likes: Int // количество лайков
-    let views: Int // количество просмотров.
+    let author: String
+    let description: String
+    let image: UIImage
+    let likes: Int
+    let views: Int
 }
 
 struct PostingSections {
@@ -34,7 +33,6 @@ struct Posts {
 Мы все видели муравейник. Это чётко функционирующая система, где каждый муравей делает то, что ему положено делать, не размышляя, правильно это или не правильно. К этому ли стремится наша цивилизация?
 """,
                     image: #imageLiteral(resourceName: "0.jpg"),
-//                    image: "0.jpg",
                     likes: 45,
                     views: 90),
         
@@ -48,7 +46,6 @@ struct Posts {
 Естественно, что выполнить эти задачи гораздо легче и удобнее сообща. Любой человек является составной частью общества, которому отдает наибольшую часть своего времени и сил. А взамен получает возможность более комфортного существования.
 """,
                     image: #imageLiteral(resourceName: "1.jpg"),
-//                    image: "1.jpg",
                     likes: 12,
                     views: 87),
         
@@ -68,7 +65,6 @@ struct Posts {
 Таково общепринятое мнение.
 """,
                     image: #imageLiteral(resourceName: "2.jpg"),
-//                    image: "2.jpg",
                     likes: 67,
                     views: 90),
         
@@ -90,7 +86,6 @@ struct Posts {
 https://karta10top.ru/vliyanie-obshhestva-na-cheloveka/
 """,
                     image: #imageLiteral(resourceName: "3.jpg"),
-//                    image: "3.jpg",
                     likes: 37,
                     views: 69)
             ])

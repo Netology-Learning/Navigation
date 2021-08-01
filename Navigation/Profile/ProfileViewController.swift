@@ -61,6 +61,7 @@ extension ProfileViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseId, for: indexPath) as! PostTableViewCell
+        cell.posting = Posts.feedModel[0].posting[indexPath.row]
         
         return cell
     }
@@ -69,19 +70,11 @@ extension ProfileViewController: UITableViewDataSource {
         guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: String(describing: ProfileTableHeaderView.self)) as? ProfileTableHeaderView else { return nil }
         return headerView
     }
-   
 }
 
 extension ProfileViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        
-        let fasting = Posts.feedModel[indexPath.section].posting[indexPath.row]
-        
-        (cell as! PostTableViewCell).posting = fasting
-        
-    }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 250 // высота серого поля
+        return 250
     }
 }
